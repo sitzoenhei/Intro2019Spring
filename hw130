@@ -5,7 +5,7 @@
 /**
  * doc comment
  */
-public class helloworld
+public class hw130
 {
     public static void main(String[] args) //this is an inline comment
     {
