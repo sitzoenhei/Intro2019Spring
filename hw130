@@ -1,0 +1,16 @@
+//@JohnnySit
+/*
+ * 
+ */
+/**
+ * doc comment
+ */
+public class helloworld
+{
+    public static void main(String[] args) //this is an inline comment
+    {
+        System.out.println(" $ $");
+        System.out.println(" ^ ");
+        System.out.println(" ____ ");
+    }
+}
