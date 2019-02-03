@@ -1,0 +1,24 @@
+
+/**
+ * Homework 2/3/19
+ * 
+ */
+import java.util. Scanner; //required import for terminal IO
+import java.util.*; 
+import java.text.*;
+public class hw203
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        Date now = new Date(); 
+        Calendar cal = Calendar.getInstance();  
+        DateFormat d1 = DateFormat.getDateInstance(); 
+        System.out.print("Please enter your name:");
+        String Name = in.nextLine(); 
+        DateFormat d5 = DateFormat.getDateTimeInstance(DateFormat.FULL,DateFormat.FULL);
+        String str5 = d5.format(now);
+        System.out.println("You name is "+ Name);
+        System.out.println("Today is " + str5);
+    }
+}
