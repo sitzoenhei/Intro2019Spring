@@ -15,10 +15,10 @@ public class hw203
         Calendar cal = Calendar.getInstance();  
         DateFormat d1 = DateFormat.getDateInstance(); 
         System.out.print("Please enter your name:");
-        String Name = in.nextLine(); 
-        DateFormat d5 = DateFormat.getDateTimeInstance(DateFormat.FULL,DateFormat.FULL);
+        String Name = in.nextLine(); //get your name
+        DateFormat d5 = DateFormat.getDateTimeInstance(DateFormat.FULL,DateFormat.FULL);// format the time
         String str5 = d5.format(now);
-        System.out.println("You name is "+ Name);
-        System.out.println("Today is " + str5);
+        System.out.println("You name is "+ Name);//output your name
+        System.out.println("Today is " + str5);//out put the time
     }
 }
