@@ -1,0 +1,22 @@
+
+/**
+ * Notes on Basic Math Operations in Java
+ * @
+ * 2/5/19
+ */
+
+public class BasicMath
+{
+    public static void main(String[] args)
+    {
+        //Difference between an int and double
+        
+        //Computing with variables +,-,* ,/
+        
+        //Using parentheses appropriately
+        
+        //Special Operators powers, absolute value
+
+        //Prompting for number values
+    }
+}
