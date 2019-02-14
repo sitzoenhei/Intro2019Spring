@@ -87,24 +87,24 @@ public class hw211
             //
             int twenty = n / 20;
             int aftertwenty = n % 20;
-            System.out.println("20 notes :" + twenty);
+            System.out.println("20 Bills :" + twenty);
             int ten = aftertwenty / 10;
             int afterten = aftertwenty % 10;
-            System.out.println("10 notes :" + ten);  
+            System.out.println("10 Bills :" + ten);  
             int five = afterten / 5;
             int afterfive = afterten % 5;
-            System.out.println("5 notes :" + five);  
-            System.out.println("1 notes :" + afterfive);
+            System.out.println("5 Bills :" + five);  
+            System.out.println("1 Bills :" + afterfive);
             //
             int fiftyc = c / 50;
             int afterfif = c % 50;
-            System.out.println("5 Dimes :" + fiftyc);
+            System.out.println("50 Cents :" + fiftyc);
             int quater = afterfif / 25;
             int afterquater = afterfif % 25;
             System.out.println("Quarter: " + quater);
             int tenc = afterquater / 10;
             int aftertenc = afterquater % 10;
-            System.out.println("1 Dime : " + tenc);
+            System.out.println("10 Cents : " + tenc);
             int fivec = aftertenc / 5;
             int afterfivec = aftertenc % 5;
             System.out.println("5 cents: " + fivec);
