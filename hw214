@@ -1,0 +1,114 @@
+
+/**
+ * Write a description of class hw211 here.
+ *
+ * @johnny
+ * @version (a version number or a date)
+ */
+import java.util.Scanner;
+public class hw211
+{
+    public static void main(String[] args)
+    {
+        // //Quick reminder on how to declare a variable
+        // String s = "Dank Memez";
+        // System.out.println(s);
+        // //Difference between an int and double
+        // int x = 6; //"int x gets the value of 6"
+        // /*
+         // * ints represent integers from mathematics
+         // * They can be positive negative or zero, but are always 
+         // * whole numbers.
+         // * 
+         // * To declare a numerical value the format is the following
+         // * type varName = value;
+         // * 
+         // */
+        // System.out.println("The value of x is " + x);
+        // //Computing with variables +,-,* ,/
+        // int y = -3;
+        // System.out.println("The value of y is " + y);
+        // System.out.println("The value of x plus y is : ");
+        // System.out.println(x + y);
+        // System.out.println("The value of x minus y is : ");
+        // System.out.println(x - y);
+        // System.out.println("The value of x times y is :");
+        // System.out.println(x * y);
+        // System.out.println("The value of x divided by y is :");
+        // System.out.println(x / y);
+        // //When doing integer math, the output is always an integer
+        // double r = 2.5;
+        // double t = 3.7;
+        // System.out.println("The value of r is " + r);
+        // System.out.println("The value of t is " + t);
+        
+        // //Special Operators powers, absolute value
+        // System.out.println("r cubed minus 3 times t");
+        // System.out.println(Math.pow(r,3) - 3*t);
+        // //In class example
+        // System.out.println((Math.pow(r,7) - 5*Math.pow(t,4))/(4*r + t));
+        // //Prompting for number values
+        // //How to prompt for a double
+        Scanner in = new Scanner(System.in);//required line
+        // System.out.print("Please enter a value for a :");
+        // double a = in.nextDouble();
+        // System.out.print("Please enter a value for b : ");
+        // double b = in.nextDouble();
+        // //Class example square root of a*b
+        // System.out.println("The square root of a times b is");
+        // System.out.println(Math.sqrt(a*b));
+        // int g = 7;
+        // int h = 3;
+        // System.out.println("7 mod 3 is :" + g % 3);
+        
+        // System.out.print("Friends num");
+        // int friends = in.nextInt();
+        // System.out.print("Cookies num");
+        // int cookies = in.nextInt();
+        // System.out.println("Each friend can have "+ friends/cookies +" cookies");
+        // System.out.println("There are " + friends % cookies + " cookies left over");
+        
+        System.out.print("Total Price is ");
+        double total = in.nextDouble();
+        System.out.print("Money customer given is ");
+        double gi = in.nextDouble();
+        double m = gi - total;
+        int n = (int) m; 
+        if (n < 0)
+        {
+            System.out.println("Dial 911 or KILL the comsumer please.");
+        }
+        else
+        {
+            System.out.println("You need to change $" + m + " dollars.");
+            int dollars = (int) total ;
+            double cent = ((m % 1) * 100);
+            int c = (int) cent;
+            //
+            int twenty = n / 20;
+            int aftertwenty = n % 20;
+            System.out.println("20 notes" + twenty);
+            int ten = aftertwenty / 10;
+            int afterten = aftertwenty % 10;
+            System.out.println("10 notes" + ten);  
+            int five = afterten / 5;
+            int afterfive = afterten % 5;
+            System.out.println("5 notes" + five);  
+            System.out.println("1 notes" + afterfive);
+            //
+            int fiftyc = c / 50;
+            int afterfif = c % 50;
+            System.out.println("50 cents:" + fiftyc);
+            int quater = afterfif / 25;
+            int afterquater = afterfif % 25;
+            System.out.println("Quater: " + quater);
+            int tenc = afterquater / 10;
+            int aftertenc = afterquater % 10;
+            System.out.println("10 cents: " + tenc);
+            int fivec = aftertenc / 5;
+            int afterfivec = aftertenc % 5;
+            System.out.println("5 cents: " + fivec);
+            System.out.println("1 cents: " + afterfivec);
+        }
+    }
+}
