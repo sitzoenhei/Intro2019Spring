@@ -2,7 +2,7 @@
 /**
  * Write a description of class hw211 here.
  *
- * @author (your name)
+ * @Johnny
  * @version (a version number or a date)
  */
 import java.util.Scanner;
@@ -109,6 +109,7 @@ public class hw211
             int afterfivec = aftertenc % 5;
             System.out.println("5 cents: " + fivec);
             System.out.println("1 cents: " + afterfivec);
+            System.out.println("If you don't have enough change, dial 781-985-XXXX, we can deliver cash in a low price.");
         }
     }
 }
