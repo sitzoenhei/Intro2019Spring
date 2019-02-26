@@ -1,0 +1,72 @@
+/**
+ * @pblake
+ * 2/26/19
+ * This program demonstrates some of the finer features of strings.
+ */
+
+import java.util.Scanner;
+
+public class Strings
+{
+    public static void main(String [] args)
+    {
+        Scanner in = new Scanner(System.in);
+        //Declaring a String
+        String s = "DankBoi"; //creates a reference in ram
+        //type varName = value;
+        //Read as String s gets the value "DankBoi"
+        
+        //System.out.println(s);
+        //System.out.println("DankBoi");
+        // s is a reference to ram
+        
+        s = s + " DankFriend"; //we edit the reference to s
+        
+        //System.out.println(s);
+        //System.out.println("DankBoi");
+      
+        //We are able to add strings together using the + symbol this is called concatenation
+        String a = "apple";
+        String b = "biscuits";
+        
+        //If I want to combine these strings, do the following
+        
+        String newString = a + b;
+        
+        System.out.println(newString);
+        
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        
+        String firstFive = alphabet.substring(0,5); //this is the substring method "called" on alphabet
+        //The method takes two arguments 0 and 5
+        //0 represents the starting index, 5 represents the length in characters
+        //The first character of all strings is 0 
+        
+        System.out.println(firstFive);
+        
+        //How to figure out the length of a string
+        System.out.println("The length of alphabet is " + alphabet.length() );
+        //length is a method which takes no methods and is called on alphabet
+        
+        //To find the position of a specific character use .indexOf
+        
+        System.out.println("The position of c is " + alphabet.indexOf("c"));
+        
+        //Use camelCase when writing variable names and methods
+        /*
+         * thisIsCamelCase
+         * ThiIsNot
+         */
+        
+        //HW prompt a user for an email address
+        //Then print out the username and domain on to seperate lines
+        //Example pblake@scit.org
+        //Prints out
+        //Username pblake
+        //Domain scit.org
+        
+        
+        //Strategy, find the location of the @ symbol, then create 2 substrings
+        
+    }
+}
