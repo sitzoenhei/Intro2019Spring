@@ -1,6 +1,6 @@
 
 /**
- * Johnny
+ * Write a description of your class here.
  * 
  */
 import java.util.Scanner;
@@ -8,12 +8,19 @@ public class spli
 {
     public static void main(String[] args)
     {
-        Scanner console = new Scanner(System.in);
-        System.out.println("Enter you email");
-        String email = console.nextLine();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your email");
+        String email = in.nextLine();
         for (String retval: email.split("@")){
             System.out.println(retval);
         }
-
+        ////
+        ////
+        System.out.println("second way");
+        int loc = email.indexOf('@');//find position of @
+        int len = email.length();//
+        System.out.println("the username is :" + email.substring(0,loc));
+        System.out.println("Domain: " + email.substring(loc,len));
+        //
     }
 }
