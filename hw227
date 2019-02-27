@@ -1,0 +1,19 @@
+
+/**
+ * Johnny
+ * 
+ */
+import java.util.Scanner;
+public class spli
+{
+    public static void main(String[] args)
+    {
+        Scanner console = new Scanner(System.in);
+        System.out.println("Enter you email");
+        String email = console.nextLine();
+        for (String retval: email.split("@")){
+            System.out.println(retval);
+        }
+
+    }
+}
