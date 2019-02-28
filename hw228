@@ -1,0 +1,20 @@
+
+/**
+ * Johnny Sit
+ * 
+ */
+import java.util. Scanner;
+public class hw228
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in); 
+        String pn = in.nextLine();
+        System.out.println("Your formal number is " + pn);
+        String res1 = pn.replace("(","");
+        String res2 = res1.replace(")","");
+        String res3 = res2.replace(" ","");
+        String fres = res3.replace("-","");
+        System.out.println(fres);
+    }
+}
