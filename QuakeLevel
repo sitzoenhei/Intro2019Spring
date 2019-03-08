@@ -1,0 +1,19 @@
+
+/**
+ * Simulates a civilian warning message based on a Richter-Scale Reading
+ * @pblake
+ * 3/8/19
+ */
+public class RichterScale
+{
+    public static void main(String [] args)
+    {
+        //Simulate a random number between 1 and 10
+        int quakeLevel = (int) (Math.random()*10 + 1);
+        
+        //Print out five different warning messages based on the quakeLevel
+        System.out.println("Attention! : Earthquake Level " + quakeLevel + " inbound");
+        
+        
+    }
+}
