@@ -1,0 +1,35 @@
+
+/**
+ * Johnny
+ * 
+ */
+import java.util.Scanner;
+public class quakelevel
+{
+  public static void main(String [] args)
+  {
+    int quakeLevel = (int) (Math.random()*10 + 1);
+    if (quakeLevel == 10 || quakeLevel ==9)
+    {
+        System.out.println("You don't have to run anymore, just waiting for lucky");
+    }
+    if (quakeLevel == 8 || quakeLevel ==7)
+    {
+        System.out.println("Get out of your bed and find a safty place");
+    }
+    if (quakeLevel == 6 || quakeLevel ==5)
+    {
+        System.out.println("Please hidding under the desk");
+    }
+    if (quakeLevel == 4 || quakeLevel ==3)
+    {
+        System.out.println("RUNRUNRUNRUN");
+    }
+    if (quakeLevel == 2 || quakeLevel ==1)
+    {
+        System.out.println("Keep sleeping");
+    }
+  
+  }
+
+}
