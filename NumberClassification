@@ -1,0 +1,53 @@
+
+/**
+ * This assignment uses booleans to tell information abotu an input integer
+ * @pblake 3/21/19
+ */
+
+import java.util.Scanner;
+
+public class NumberClassification
+{
+   public static void main(String [] args)
+   {
+       Scanner in = new Scanner(System.in);
+       System.out.print("Sauce me an integer fam -_-");
+       int num = in.nextInt();
+      
+       //Variable Declarations
+       boolean isOdd;
+       boolean isEven;
+       boolean isPositive;
+       boolean isNegative;
+       boolean isZero;
+       boolean isDivisbleBy17;
+       boolean isMoreThan100;
+       
+       if(num % 2 == 1)
+       {
+           isOdd = true;
+       }
+       else
+       {
+           isOdd = false;
+       }
+       
+       if(num < 0)
+       {
+           isNegative = true;
+       }
+       else
+       {
+           isNegative = false;
+       }
+       
+       System.out.println("The integer " + num + " has the following properties.");
+       System.out.print("This number is odd: " + isOdd);
+       System.out.print("This number is even: " + isEven);
+       System.out.print("This number is positive: " + isPositive);
+       System.out.println("This number is negative: " + isNegative);
+       System.out.print("This number is equal to zero: " + isZero);
+       System.out.print("This number is divisible by 17: " + isDivisbleBy17);
+       System.out.print("This number is more than 100: " + isMoreThan100);
+   }
+}
