@@ -1,0 +1,23 @@
+/**
+ * Johnny
+ */
+import java.util. Scanner;
+public class OddEven
+{
+    public OddEven()
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("please enter your number");
+        int num = in.nextInt();
+        boolean isEven;
+        if(num % 2 == 0)
+        {
+            isEven = true;
+        }
+        else
+        {
+            isEven = false;
+        }
+        System.out.println("This number is even:" + isEven);
+    }
+}
