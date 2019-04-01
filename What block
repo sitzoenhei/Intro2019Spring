@@ -1,0 +1,83 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+public class Time extends Date {
+    public static void main(String[] args) throws ParseException {
+        SimpleDateFormat df=new SimpleDateFormat("HH:mm");
+        System.out.println("Please enter your time HH:mm");
+        Scanner scan=new Scanner(System.in);
+        String str=scan.next();
+        Date time=df.parse(str);
+        //get the time
+        System.out.println("Is it Wed today? YES or NO");
+        String wed=scan.next();
+        if (wed=="YES"){
+            Date begin = df.parse("08:10");
+            Date after = df.parse("09:13");
+            if(time.before(after) && time.after(begin)){
+                System.out.println("First Block");
+            }
+            Date sbegin = df.parse("09:17");
+            Date safter = df.parse("10:20");
+            if(time.before(safter) && time.after(sbegin)){
+                System.out.println("Second Block");
+            }
+            Date tbegin = df.parse("10:24");
+            Date tafter = df.parse("11:27");
+            if(time.before(tafter) && time.after(tbegin)){
+                System.out.println("Third Block");
+            }
+            Date lbegin = df.parse("11:31");
+            Date lafter = df.parse("13:02");
+            if(time.before(after) && time.after(begin)){
+                System.out.println("Forth Block");
+            }
+            Date fbegin = df.parse("13:36");
+            Date fafter = df.parse("14:41");
+            if(time.before(fafter) && time.after(fbegin)){
+                System.out.println("Final Blockk");
+            }
+        }
+        else{
+            Date begin = df.parse("08:10");
+            Date after = df.parse("09:13");
+            if(time.before(after) && time.after(begin)){
+                System.out.println("First Block");
+            }
+            Date sbegin = df.parse("09:17");
+            Date safter = df.parse("10:20");
+            if(time.before(safter) && time.after(sbegin)){
+                System.out.println("Second Block");
+            }
+            Date tbegin = df.parse("10:24");
+            Date tafter = df.parse("11:27");
+            if(time.before(tafter) && time.after(tbegin)){
+                System.out.println("Third Block");
+            }
+            Date lbegin = df.parse("11:31");
+            Date lafter = df.parse("13:02");
+            if(time.before(after) && time.after(begin)){
+                System.out.println("Forth Block");
+            }
+            Date fbegin = df.parse("13:36");
+            Date fafter = df.parse("14:41");
+            if(time.before(fafter) && time.after(fbegin)){
+                System.out.println("Final Blockk");
+            }
+            Date hbegin = df.parse("08:10");
+            Date hafter = df.parse("09:13");
+            if(time.before(hafter) && time.after(hbegin)){
+                System.out.println("H Block");
+            }
+            else{
+                System.out.println("Passing or After School");
+            }
+        }
+    }
+}
