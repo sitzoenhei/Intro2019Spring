@@ -75,9 +75,6 @@ public class Time extends Date {
             if(time.before(hafter) && time.after(hbegin)){
                 System.out.println("H Block");
             }
-            else{
-                System.out.println("Passing or After School");
-            }
         }
     }
 }
