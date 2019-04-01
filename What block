@@ -18,27 +18,27 @@ public class Time extends Date {
         System.out.println("Is it Wed today? YES or NO");
         String wed=scan.next();
         if (wed=="YES"){
-            Date begin = df.parse("08:10");
-            Date after = df.parse("09:13");
+            Date begin = df.parse("09:17");
+            Date after = df.parse("10:13");
             if(time.before(after) && time.after(begin)){
                 System.out.println("First Block");
             }
-            Date sbegin = df.parse("09:17");
-            Date safter = df.parse("10:20");
+            Date sbegin = df.parse("10:17");
+            Date safter = df.parse("11:13");
             if(time.before(safter) && time.after(sbegin)){
                 System.out.println("Second Block");
             }
-            Date tbegin = df.parse("10:24");
-            Date tafter = df.parse("11:27");
+            Date tbegin = df.parse("11:17");
+            Date tafter = df.parse("12:41");
             if(time.before(tafter) && time.after(tbegin)){
-                System.out.println("Third Block");
+                System.out.println("Lunch Block");
             }
-            Date lbegin = df.parse("11:31");
-            Date lafter = df.parse("13:02");
+            Date lbegin = df.parse("12:45");
+            Date lafter = df.parse("13:41");
             if(time.before(after) && time.after(begin)){
                 System.out.println("Forth Block");
             }
-            Date fbegin = df.parse("13:36");
+            Date fbegin = df.parse("13:45");
             Date fafter = df.parse("14:41");
             if(time.before(fafter) && time.after(fbegin)){
                 System.out.println("Final Blockk");
@@ -63,7 +63,7 @@ public class Time extends Date {
             Date lbegin = df.parse("11:31");
             Date lafter = df.parse("13:02");
             if(time.before(after) && time.after(begin)){
-                System.out.println("Forth Block");
+                System.out.println("Lunch Block");
             }
             Date fbegin = df.parse("13:36");
             Date fafter = df.parse("14:41");
