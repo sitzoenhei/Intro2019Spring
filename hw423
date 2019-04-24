@@ -25,32 +25,34 @@ public class hw424
         }
        else{ 
            System.out.println("Perimeter is " + perimeter);
-           System.out.println("Area is "+ a1);
+           System.out.println("Area is "+ a1/6);
         }
        // Triangle Finish
        
        System.out.println("Please Enter the money you need to convert");
        int m1 = in.nextInt();
        int n = (int) m1; ;
-       double cent = ((m1 % 1) * 100);
+       double cent = ((m1 % 1) * 10000);
        int c = (int) cent;
        //Starting Calculate
-       int hundred = n / 100;
-       int afterhundred = n % 100;
+       int hundred = n / 10000;
+       int afterhundred = n % 10000;
        System.out.println("100 Bills :" + hundred);
-       int twenty = afterhundred / 20;
-       int aftertwenty = afterhundred % 20;
+       int twenty = afterhundred / 2000;
+       int aftertwenty = afterhundred % 2000;
        System.out.println("20 Bills :" + twenty);
-       int ten = aftertwenty / 10;
-       int afterten = aftertwenty % 10;
+       int ten = aftertwenty / 1000;
+       int afterten = aftertwenty % 1000;
        System.out.println("10 Bills :" + ten);  
-       int five = afterten / 5;
-       int afterfive = afterten % 5;
+       int five = afterten / 500;
+       int afterfive = afterten % 500;
        System.out.println("5 Bills :" + five);  
-       System.out.println("1 Bills :" + afterfive);
+       int one = afterfive / 100;
+       int afterone = afterfive % 100;
+       System.out.println("1 Bills :" + one); 
        //Notes Finished
-       int fiftyc = c / 50;
-       int afterfif = c % 50;
+       int afterone = c / 50;
+       int afterone = c % 50;
        System.out.println("50 Cents :" + fiftyc);
        int quater = afterfif / 25;
        int afterquater = afterfif % 25;
