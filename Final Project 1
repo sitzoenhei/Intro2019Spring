@@ -1,0 +1,35 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+import java.util. Scanner;
+public class Project
+{
+    public static void main(String[] args)
+    {
+        firstpage();
+    }
+    public static void firstpage()
+    {
+      Scanner console = new Scanner(System.in);
+      System.out.println("Press 1 to login");
+      System.out.println("Press 2 to register");
+      System.out.println("Press 3 to screw off");
+      Double num = console.nextDouble();
+      if (num == 1)
+      {
+          System.out.println("Entering Login page");
+          login.main();
+      }
+      if (num == 2)
+      {
+         System.out.println("Entering Register page");
+         Reg.main();
+      }
+      else
+      {
+          System.exit(0);
+      }     
+    }
+}
