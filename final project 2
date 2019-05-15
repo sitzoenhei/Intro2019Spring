@@ -1,0 +1,40 @@
+import java.io.File;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.util. Scanner;
+public class Reg
+{
+    public static void main()
+    {
+        Scanner console = new Scanner(System.in);
+        System.out.println("Please enter your name");
+        String name = console.nextLine();
+        System.out.println("Please enter your password");
+        String pw = console.nextLine();
+        System.out.println("Please comfirm your password");
+        String confirm = console.nextLine();
+        if (pw.equals(confirm)) 
+        {
+            File writename = new File("./JohnnysProject/uspw/"+ name);
+            try {
+            FileWriter fw = null;
+            fw = new FileWriter("H:",true);
+            fw.write(pw);
+            fw.close();
+            System.out.println("Register completed");
+            } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Writing fail");
+            }
+        }
+        else
+        {
+            System.out.println("Passwords doesn't mathch");
+        }
+        System.out.println("Returning to home page now");
+        Project.firstpage();
+    }
+}
