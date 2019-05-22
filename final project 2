@@ -1,10 +1,6 @@
-import java.io.File;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.util. Scanner;
+import java.io.*;
+import java.util.Scanner;
+import java.util.Base64;
 public class Reg
 {
     public static void main()
@@ -18,17 +14,23 @@ public class Reg
         String confirm = console.nextLine();
         if (pw.equals(confirm)) 
         {
-            File writename = new File("./JohnnysProject/uspw/"+ name);
+            //encode start
+            byte[] encodedBytes = Base64.getEncoder().encode(pw.getBytes());
+            System.out.println("encodedBytes " + new String(encodedBytes));
+            //encode end, writing file start
             try {
+            String fc = "./" + name;
+            File writename = new File(fc);
             FileWriter fw = null;
-            fw = new FileWriter("H:",true);
-            fw.write(pw);
+            fw = new FileWriter(fc,true);
+            fw.write(new String(encodedBytes));
             fw.close();
             System.out.println("Register completed");
             } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Writing fail");
             }
+            //Writing File end
         }
         else
         {
