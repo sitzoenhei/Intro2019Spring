@@ -16,7 +16,7 @@ public class Reg
         {
             //encode start
             byte[] encodedBytes = Base64.getEncoder().encode(pw.getBytes());
-            System.out.println("encodedBytes " + new String(encodedBytes));
+            //System.out.println("encodedBytes " + new String(encodedBytes));
             //encode end, writing file start
             try {
             String fc = "./" + name;
