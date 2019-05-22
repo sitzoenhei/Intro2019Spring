@@ -21,15 +21,14 @@ public class login
         String filename = "./" + name;
         FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
-        while (null != (str = br.readLine())) {
-            System.out.println(str);
-        }
+        str = br.readLine();
+        System.out.println(str);
         //read file end
         //decode start
         byte[] asBytes = Base64.getDecoder().decode(str.getBytes());
-        System.out.println(new String(asBytes, "utf-8"));
+        //System.out.println(new String(asBytes, "utf-8"));
         //decode end
-        if (new String(asBytes) == password)
+        if (new String(asBytes).equals(password))
         {
             System.out.println("Login Success");
         }
